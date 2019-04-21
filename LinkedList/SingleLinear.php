@@ -12,7 +12,7 @@ namespace dataStructure\LinkedList;
 class linkSL
 {
     public $nama;
-    public $previous;
+    public $next;
     public function __construct($nama)
     {
         $this->nama= $nama;
@@ -22,27 +22,27 @@ class linkSL
     }
 }
 class SingleLinear{
-    public $last;
+    public $first;
     public function __construct()
     {
-        $this->last= null;
+        $this->first= null;
     }
     public function insert($nama){
         $obj= new linkSL($nama);
-        $obj->previous= $this->last;
-        $this->last= $obj;
+        $obj->next= $this->first;
+        $this->first= $obj;
     }
     public function getData(){
-        $current= $this->last;
+        $current= $this->first;
         while($current!=null){
             $current->displayNama();
-            $current= $current->previous;
+            $current= $current->next;
             echo '<br/>';
         }
     }
-    public function deleteLast(){
-        $current= $this->last;
-        $this->last= $current->previous;
+    public function deleteFirst(){
+        $current= $this->first;
+        $this->first= $current->next;
     }
 }
 
@@ -53,10 +53,10 @@ $obj->insert("toni");
 $obj->insert("titi");
 $obj->getData();
 echo '<hr/>';
-$obj->deleteLast();
+$obj->deleteFirst();
 $obj->getData();
 echo '<hr/>';
-$obj->deleteLast();
+$obj->deleteFirst();
 $obj->getData();
 
 
