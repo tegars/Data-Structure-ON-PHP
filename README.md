@@ -1,7 +1,7 @@
 # Table of Content
 <ol>
-  <li>Queue & Stack</li>
-  <li>Linear Search & Binary Search</li>
+  <li>Queue & Stack (Using Array)</li>
+  <li>Linear Search & Binary Search (Using Array)</li>
 </ol>
 
 <br/><hr/>
