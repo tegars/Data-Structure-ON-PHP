@@ -6,8 +6,8 @@
 <br/>
 Description:
 <ul>
-  <li>PHP</li>
-  <li>PHP Storm</li>
+  <li>PHP 7.1</li>
+  <li>PHP Storm 2016</li>
 </ul>
 <br/><hr/>
 - Love Code
